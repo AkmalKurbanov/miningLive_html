@@ -12,6 +12,8 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <link rel="stylesheet" href="/bower_components/fancybox/dist/jquery.fancybox.min.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -46,8 +48,6 @@
             <span class="hamburger__line"></span>
           </div>
           <div class="container">
-            <!-- <div class="row"> -->
-            <!-- <div class="col-lg-3 col-md-4"> -->
             <div class="header__wrap">
               <div class="header__logo">
                 <a href="#">
@@ -55,7 +55,6 @@
                   <p>We know everything about Mining Life</p>
                 </a>
               </div>
-              <!-- </div> -->
               <div class="header__navWrap__topNav">
                 <ul>
                   <li><a href="#">О проекте</a></li>
@@ -64,26 +63,275 @@
                 </ul>
                 <a href="#" class="header__navWrap__button">Войти</a>
               </div>
-              <!-- <div class="col-lg-9 col-md-12"> -->
               <div class="header__navWrap">
                 <div class="header__navWrap__mnu mnu-js">
                   <ul>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Проекты</a></li>
-                    <li><a href="#">Инвесторам</a></li>
-                    <li><a href="#">Сервисные компании</a></li>
-                    <li><a href="#">Научные статьи</a></li>
-                    <li><a href="#">Истории успеха</a></li>
+                    <li><a data-scroll href="#">Новости</a></li>
+                    <li><a data-scroll href="#">Проекты</a></li>
+                    <li><a data-scroll href="#">Инвесторам</a></li>
+                    <li><a data-scroll href="#">Сервисные компании</a></li>
+                    <li><a data-scroll href="#">Научные статьи</a></li>
+                    <li><a data-scroll href="#">Истории успеха</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <!-- </div> -->
-            <!-- </div> -->
           </div>
         </div>
         <!-- header end -->
+
+        <!-- news -->
+
+        <div class="news">
+          <div class="container">
+            <div class="news__articles">
+              <div class="row">
+                <div class="col-lg-3 offset-lg-0 col-md-6 offset-md-3">
+                  <div class="swiper-container news__slider sliderNews-js">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide news__slider__item">
+                        <div class="captionWrap">
+                          <h1 class="captionWrap__caption">Новости</h1>
+                          <p class="captionWrap__subtitle">Самые актуальные новости в сфере горной добычи и <br>
+                            разведки.
+                          </p>
+                          <a class="captionWrap__more" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide news__slider__item">
+                        <div class="captionWrap">
+                          <h1 class="captionWrap__caption">Новости</h1>
+                          <p class="captionWrap__subtitle">Самые актуальные новости в сфере горной добычи и <br>
+                            разведки.
+                          </p>
+                          <a class="captionWrap__more" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide news__slider__item">
+                        <div class="captionWrap">
+                          <h1 class="captionWrap__caption">Новости</h1>
+                          <p class="captionWrap__subtitle">Самые актуальные новости в сфере горной добычи и <br>
+                            разведки.
+                          </p>
+                          <a class="captionWrap__more" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
+                    <div class="news__item__drop">
+                      <p class="news__item__status">Мировые</p>
+                      <h2 class="news__item__caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
+                        В ВОЗНИКНОВЕНИИ
+                        КОНФЛИКТОВ</h2>
+                      <span class="news__item__date">10.04.2017</span>
+                    </div>
+                    <p class="news__item__anons">
+                      Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего
+                    </p>
+                    <span class="news__item__date news__item__date-source">Источник: cyberleninka.ru</span>
+                  </a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
+                    <div class="news__item__drop">
+                      <p class="news__item__status">Мировые</p>
+                      <h2 class="news__item__caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
+                        В ВОЗНИКНОВЕНИИ
+                        КОНФЛИКТОВ</h2>
+                      <span class="news__item__date">10.04.2017</span>
+                    </div>
+                    <p class="news__item__anons">
+                      Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего
+                    </p>
+                    <span class="news__item__date news__item__date-source">Источник: cyberleninka.ru</span>
+                  </a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
+                    <div class="news__item__drop">
+                      <p class="news__item__status">Мировые</p>
+                      <h2 class="news__item__caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
+                        В ВОЗНИКНОВЕНИИ
+                        КОНФЛИКТОВ</h2>
+                      <span class="news__item__date">10.04.2017</span>
+                    </div>
+                    <p class="news__item__anons">
+                      Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего
+                    </p>
+                    <span class="news__item__date news__item__date-source">Источник: cyberleninka.ru</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- news end -->
+
       </div>
+
+      <!-- projects -->
+
+      <div class="projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <div class="captionWrap">
+                <h1 class="captionWrap__caption captionWrap__caption-othetKind">Проекты</h1>
+                <p class="captionWrap__subtitle">Профили проектов <br>
+                  на продажу, перепродажу,
+                  аренду.
+                </p>
+                <a class="captionWrap__more captionWrap__more-other" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="projects__slider">
+                <div class="swiper-container sliderProjects-js">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide projects__item">
+                      <a href="#" class="projects__item__img">
+                        <img src="images/projects/project1.jpg" alt="">
+                        <h2 class="projects__item__caption">Природные ресурсы
+                          Актауской области</h2>
+                      </a>
+                      <table>
+                        <tr>
+                          <td>Вид:</td>
+                          <td>Руда</td>
+                        </tr>
+                        <tr>
+                          <td>Тип:</td>
+                          <td>Аренда</td>
+                        </tr>
+                        <tr>
+                          <td>Регион:</td>
+                          <td>Западный Казахстан</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="swiper-slide projects__item">
+                      <a href="#" class="projects__item__img">
+                        <img src="images/projects/project2.jpg" alt="">
+                        <h2 class="projects__item__caption">Природные ресурсы
+                          Актауской области</h2>
+                      </a>
+                      <table>
+                        <tr>
+                          <td>Вид:</td>
+                          <td>Руда</td>
+                        </tr>
+                        <tr>
+                          <td>Тип:</td>
+                          <td>Аренда</td>
+                        </tr>
+                        <tr>
+                          <td>Регион:</td>
+                          <td>Западный Казахстан</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="swiper-slide projects__item">
+                      <a href="#" class="projects__item__img">
+                        <img src="images/projects/project3.jpg" alt="">
+                        <h2 class="projects__item__caption">Природные ресурсы
+                          Актауской области</h2>
+                      </a>
+                      <table>
+                        <tr>
+                          <td>Вид:</td>
+                          <td>Руда</td>
+                        </tr>
+                        <tr>
+                          <td>Тип:</td>
+                          <td>Аренда</td>
+                        </tr>
+                        <tr>
+                          <td>Регион:</td>
+                          <td>Западный Казахстан</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- projects end -->
+
+      <!-- useful -->
+      <div class="container">
+        <div class="useful">
+          <div class="row">
+            <div class="col-md">
+              <div class="captionWrap captionWrap-videDesc">
+                <h1 class="captionWrap__caption captionWrap__caption-useful">Полезный <br>
+                  видео материал </h1>
+                <p class="captionWrap__subtitle">Самые последние выступления. <br> Обучающие тренинги.
+                </p>
+                <a class="captionWrap__more captionWrap__more-useful" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="useful__video">
+                <img src="https://i.ytimg.com/vi/_DKSpfSBUuo/mqdefault.jpg">
+                <div class="useful__video__desc">
+                  <p class="news__item__status">Мировые</p>
+                  <p class="useful__video__info">Как добывают и <br>
+                    руду в Казахстане </p>
+                  <span class="news__item__date">10.04.2017</span>
+                  <a data-fancybox="video" href="https://www.youtube.com/watch?v=_DKSpfSBUuo">
+                    <i class="icon-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- useful end -->
+
+      <!-- articles -->
+      <div class="articles">
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <div class="articles__side articles__side-left">
+                <div class="captionWrap">
+                  <h1 class="captionWrap__caption captionWrap__caption-othetKind">Проекты</h1>
+                  <p class="captionWrap__subtitle">Профили проектов <br>
+                    на продажу, перепродажу,
+                    аренду.
+                  </p>
+                  <a class="captionWrap__more captionWrap__more-other" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="articles__side"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- articles end -->
 
     </div>
     <!-- contentWrap end -->
@@ -104,6 +352,8 @@
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/swiper/dist/js/swiper.js"></script>
+  <script src="/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

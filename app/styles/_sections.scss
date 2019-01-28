@@ -1,6 +1,16 @@
 .openingSection {
-  min-height: 100vh;
+  min-height: 600px;
   background: linear-gradient(180deg, rgb(239, 79, 41) 0%, rgb(248, 150, 4) 100%);
+
+  @media (max-width: 1199.98px) {
+    min-height: 550px;
+  }
+
+  @media (max-width: 991.98px) {
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 767.98px) {
+    padding-bottom: 0;
+  }
 }
-
-
