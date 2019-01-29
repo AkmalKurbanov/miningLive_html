@@ -4,6 +4,10 @@
   &__logo {
     max-width: 225px;
 
+    @media (max-width: 575.98px) {
+      max-width: 200px;
+    }
+
     a {
       text-decoration: none;
     }
@@ -19,6 +23,12 @@
       color: #ccc;
       font-weight: 300;
       margin-top: 2px;
+    }
+
+    &_login {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px;
     }
   }
 
@@ -60,6 +70,8 @@
     color: #ef4d2a;
     line-height: 25px;
     border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
 
     &:hover {
       text-decoration: none;
@@ -162,7 +174,7 @@
     justify-content: center;
     transition: all .3s;
     position: fixed;
-    z-index: 9;
+    z-index: 9999999;
 
     &:before {
       opacity: 1;
@@ -225,4 +237,14 @@
     }
   }
 
+  select {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    color: #cccccc;
+    outline: none;
+    option {
+      
+    }
+  }
 }

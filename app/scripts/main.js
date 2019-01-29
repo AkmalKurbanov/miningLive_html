@@ -41,14 +41,6 @@ $(document).ready(function () {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -104,7 +96,20 @@ $(document).ready(function () {
 
 
 
-
+  // button up 
+  jQuery(function (f) {
+    var element = f('.scrolltop');
+    f(window).scroll(function () {
+      element['fade' + (f(this).scrollTop() > 220 ? 'In' : 'Out')](500);
+    });
+  });
+  $('.scrolltop').click(function () {
+    $('body,html').animate({
+      scrollTop: 0,
+    }, 800);
+    return false;
+  });
+  // button up end
 
 
 

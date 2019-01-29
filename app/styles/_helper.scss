@@ -21,6 +21,7 @@ body {
 .caption-wrap {
   text-align: left;
   position: relative;
+
   &_videoDesc {
     margin-top: 30px;
 
@@ -194,3 +195,34 @@ body {
 // caption end
 
 
+// scrolltop
+.scrolltop {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  max-width: 36px;
+  width: 100%;
+  min-height: 36px;
+  background: linear-gradient(180deg, rgb(239, 79, 41) 0%, rgb(248, 150, 4) 100%);
+  z-index: 2;
+  display: none;
+  cursor: pointer;
+
+  .iconWrap {
+    color: #fff;
+    font-size: 20px;
+    max-width: 36px;
+    width: 100%;
+    min-height: 36px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+
+
+// scrolltop end

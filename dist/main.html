@@ -10,20 +10,11 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
-  <link rel="stylesheet" href="/bower_components/fancybox/dist/jquery.fancybox.min.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
+  <link rel="stylesheet" href="styles/vendor.css">
 
-  <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
 
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+  <script src="scripts/vendor/modernizr.js"></script>
 </head>
 
 <body>
@@ -60,6 +51,14 @@
                   <li><a href="#">О проекте</a></li>
                   <li><a href="#">Финансы</a></li>
                   <li><a href="#">Контакты</a></li>
+                  <li>
+                    <select>
+                      <option>Ru</option>
+                      <option>Kz</option>
+                      <option>En</option>
+                      <option>Kg</option>
+                    </select>
+                  </li>
                 </ul>
 
                 <a data-fancybox data-src="#login" href="javascript:;" class="header__navWrap-button">Войти</a>
@@ -67,12 +66,12 @@
               <div class="header__navWrap">
                 <div class="header__navWrap-mnu mnu-js">
                   <ul>
-                    <li><a data-scroll href="#">Новости</a></li>
-                    <li><a data-scroll href="#">Проекты</a></li>
+                    <li><a data-scroll href="#news">Новости</a></li>
+                    <li><a data-scroll href="#projects">Проекты</a></li>
                     <li><a data-scroll href="#">Инвесторам</a></li>
                     <li><a data-scroll href="#">Сервисные компании</a></li>
-                    <li><a data-scroll href="#">Научные статьи</a></li>
-                    <li><a data-scroll href="#">Истории успеха</a></li>
+                    <li><a data-scroll href="#sinceHistory">Научные статьи</a></li>
+                    <li><a data-scroll href="#sinceHistory">Истории успеха</a></li>
                   </ul>
                 </div>
               </div>
@@ -83,7 +82,7 @@
 
         <!-- news -->
 
-        <div class="news">
+        <div class="news" id="news">
           <div class="container">
             <div class="news__articles">
               <div class="row">
@@ -170,7 +169,7 @@
 
       <!-- projects -->
 
-      <div class="projects">
+      <div class="projects" id="projects">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-4">
@@ -251,9 +250,6 @@
                       </table>
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
                 </div>
               </div>
             </div>
@@ -298,7 +294,7 @@
       <!-- useful end -->
 
       <!-- articles -->
-      <div class="articles">
+      <div class="articles" id="sinceHistory">
         <div class="container">
           <div class="row">
             <div class="col-md">
@@ -491,24 +487,33 @@
   <!-- mainWrap end -->
 
   <!-- login -->
-  <div class="login" id="login">
-
+  <div class="popup" id="login" style="display: none;">
+    <div class="login">
+      <div class="header__logo header__logo_login">
+        <a href="#">
+          <img src="images/logo.png" alt="">
+          <p>We know everything about Mining Life</p>
+        </a>
+      </div>
+      <div class="form">
+        <input type="text" class="form__input" name="login" placeholder="login" required>
+        <input type="text" class="form__input" name="pass" placeholder="password" required>
+        <button type="submit" class="header__navWrap-button">Войти</button>
+        <a href="#">Забыли пароль?</a>
+      </div>
+    </div>
   </div>
   <!-- login end -->
 
+  <!-- scrolltop -->
+  <div class="scrolltop">
+    <div class="iconWrap"><i class="fal fa-angle-up"></i></div>
+  </div>
+  <!-- scrolltop end -->
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <script src="/bower_components/swiper/dist/js/swiper.js"></script>
-  <script src="/bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+  <script src="scripts/vendor.js"></script>
 
-  <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
-  <!-- endbuild -->
 </body>
 
 </html>
