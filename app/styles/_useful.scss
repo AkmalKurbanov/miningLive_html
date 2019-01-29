@@ -93,6 +93,9 @@
 
   &__video-desc {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
 
     a {
       display: flex;
@@ -108,7 +111,7 @@
       justify-content: center;
       color: $mc;
       transition: all .3s;
-
+      right: -25%;
       @media (max-width: 991.98px) {
         width: 60px;
         height: 60px;
