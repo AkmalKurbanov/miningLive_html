@@ -1,26 +1,38 @@
 .useful {
-  border-radius: 15px;
-  background-color: rgb(40, 40, 40);
-  box-shadow: 0px 35px 112.24px 9.76px rgba(38, 35, 34, 0.2);
-  width: 100%;
-  max-width: 100%;
-  padding: 20px 40px;
-  max-width: 1050px;
-  margin: auto;
-  margin-top: -165px;
-
-  @media (max-width: 991.98px) {
-    box-shadow: 0px 25px 95.24px 9.76px rgba(38, 35, 34, 0.2);
-    padding: 10px 20px;
-    margin-top: -90px;
-  }
-
   @media (max-width: 767.98px) {
-    padding: 20px 40px;
+    background-color: rgb(40, 40, 40);
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
-  @media (max-width: 575.98px) {
-    padding: 10px 15px;
+  &__wrap {
+    border-radius: 15px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0px 35px 112.24px 9.76px rgba(38, 35, 34, 0.2);
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 40px;
+    margin: auto;
+    margin-top: -150px;
+    z-index: 2;
+    position: relative;
+
+    @media (max-width: 991.98px) {
+      box-shadow: 0px 25px 95.24px 9.76px rgba(38, 35, 34, 0.2);
+      padding: 10px 20px;
+      margin-top: -90px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 0;
+      margin: 0;
+      box-shadow: none;
+      background: none;
+    }
+
+    @media (max-width: 575.98px) {
+      padding: 10px 15px;
+    }
   }
 
   &__video {
@@ -46,84 +58,84 @@
     img {
       width: 100%;
     }
+  }
 
-    &__desc {
-      position: absolute;
+  &__video-info {
+    margin: 0;
+    font-size: 30px;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    line-height: normal;
+    font-weight: 700;
+    color: $wc;
+    margin-bottom: 10px;
+    margin-top: 5px;
 
-      a {
-        display: flex;
-        width: 70px;
-        height: 70px;
-        background-color: $wc;
-        border-radius: 100%;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        align-items: center;
-        justify-content: center;
-        color: $mc;
-        transition: all .3s;
-
-        @media (max-width: 991.98px) {
-          width: 60px;
-          height: 60px;
-        }
-
-        @media (max-width: 767.98px) {
-          width: 50px;
-          height: 50px;
-        }
-
-        @media (max-width: 575.98px) {
-          width: 40px;
-          height: 40px;
-        }
-
-        i {
-          transition: all .3s;
-        }
-
-        &:hover {
-          transform: translateY(-50%) scale(1.2);
-          background-color: $mc;
-
-          i {
-            transform: rotate(360deg);
-            color: $wc;
-          }
-        }
-      }
+    @media (max-width: 991.98px) {
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: normal;
     }
 
-    &__info {
-      margin: 0;
+    @media (max-width: 767.98px) {
       font-size: 30px;
-      width: 100%;
-      max-width: 100%;
-      display: inline-block;
-      line-height: normal;
-      font-weight: 700;
-      color: $wc;
-      margin-bottom: 10px;
-      margin-top: 5px;
+      line-height: 30px;
+      font-weight: normal;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: normal;
+    }
+  }
+
+  &__video-desc {
+    position: absolute;
+
+    a {
+      display: flex;
+      width: 70px;
+      height: 70px;
+      background-color: $wc;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      align-items: center;
+      justify-content: center;
+      color: $mc;
+      transition: all .3s;
 
       @media (max-width: 991.98px) {
-        font-size: 20px;
-        line-height: 20px;
-        font-weight: normal;
+        width: 60px;
+        height: 60px;
       }
 
       @media (max-width: 767.98px) {
-        font-size: 30px;
-        line-height: 30px;
-        font-weight: normal;
+        width: 50px;
+        height: 50px;
       }
 
       @media (max-width: 575.98px) {
-        font-size: 16px;
-        line-height: 16px;
-        font-weight: normal;
+        width: 40px;
+        height: 40px;
+      }
+
+      i {
+        transition: all .3s;
+      }
+
+      &:hover {
+        transform: translateY(-50%) scale(1.2);
+        background-color: $mc;
+
+        i {
+          transform: rotate(360deg);
+          color: $wc;
+        }
       }
     }
   }

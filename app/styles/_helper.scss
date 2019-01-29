@@ -18,8 +18,10 @@ body {
 // footerFlex down end
 
 // caption
-.captionWrap {
-  &-videDesc {
+.caption-wrap {
+  text-align: left;
+  position: relative;
+  &_videoDesc {
     margin-top: 30px;
 
     @media (max-width: 991.98px) {
@@ -37,6 +39,7 @@ body {
         line-height: 30px;
         margin-bottom: 10px;
       }
+
       @media (max-width: 767.98px) {
         font-size: 20px;
         line-height: 25px;
@@ -55,11 +58,11 @@ body {
     margin-bottom: 0;
     font-weight: 700;
 
-    &-othetKind {
+    &_othetKind {
       color: $tc;
     }
 
-    &-useful {
+    &_useful {
       font-size: 40px;
       line-height: 40px;
       margin-bottom: 20px;
@@ -116,7 +119,7 @@ body {
       }
     }
 
-    &-other {
+    &_other {
       color: $mc;
 
       &:before {
@@ -126,9 +129,27 @@ body {
       &:hover {
         color: $tc;
       }
+
+      &_articleMore {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+
+        @media (max-width: 575.98px) {
+          left: 50%;
+          transform: translateX(-50%);
+          right: auto;
+        }
+
+        &:hover {
+          i {
+            margin-left: 5px;
+          }
+        }
+      }
     }
 
-    &-useful {
+    &_useful {
       color: $mc;
 
       &:hover {
@@ -136,6 +157,40 @@ body {
       }
     }
   }
+
+  &_form-caption {
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+
+    @media (max-width: 1199.98px) {
+      font-size: 20px;
+      line-height: 40px;
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 13px;
+      line-height: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: normal;
+      margin-top: 15px;
+    }
+  }
 }
 
 // caption end
+
+

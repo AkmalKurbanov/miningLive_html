@@ -55,16 +55,17 @@
                   <p>We know everything about Mining Life</p>
                 </a>
               </div>
-              <div class="header__navWrap__topNav">
+              <div class="header__top-nav">
                 <ul>
                   <li><a href="#">О проекте</a></li>
                   <li><a href="#">Финансы</a></li>
                   <li><a href="#">Контакты</a></li>
                 </ul>
-                <a href="#" class="header__navWrap__button">Войти</a>
+
+                <a data-fancybox data-src="#login" href="javascript:;" class="header__navWrap-button">Войти</a>
               </div>
               <div class="header__navWrap">
-                <div class="header__navWrap__mnu mnu-js">
+                <div class="header__navWrap-mnu mnu-js">
                   <ul>
                     <li><a data-scroll href="#">Новости</a></li>
                     <li><a data-scroll href="#">Проекты</a></li>
@@ -86,92 +87,77 @@
           <div class="container">
             <div class="news__articles">
               <div class="row">
-                <div class="col-lg-3 offset-lg-0 col-md-6 offset-md-3">
-                  <div class="swiper-container news__slider sliderNews-js">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide news__slider__item">
-                        <div class="captionWrap">
-                          <h1 class="captionWrap__caption">Новости</h1>
-                          <p class="captionWrap__subtitle">Самые актуальные новости в сфере горной добычи и <br>
-                            разведки.
-                          </p>
-                          <a class="captionWrap__more" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide news__slider__item">
-                        <div class="captionWrap">
-                          <h1 class="captionWrap__caption">Новости</h1>
-                          <p class="captionWrap__subtitle">Самые актуальные новости в сфере горной добычи и <br>
-                            разведки.
-                          </p>
-                          <a class="captionWrap__more" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide news__slider__item">
-                        <div class="captionWrap">
-                          <h1 class="captionWrap__caption">Новости</h1>
-                          <p class="captionWrap__subtitle">Самые актуальные новости в сфере горной добычи и <br>
-                            разведки.
-                          </p>
-                          <a class="captionWrap__more" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="caption-wrap">
+                    <h1 class="caption-wrap__caption">Новости</h1>
+                    <p class="caption-wrap__subtitle">Самые актуальные новости в сфере горной добычи и <br>
+                      разведки.
+                    </p>
+                    <a class="caption-wrap__more" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
-                  <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
-                    <div class="news__item__drop">
-                      <p class="news__item__status">Мировые</p>
-                      <h2 class="news__item__caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
-                        В ВОЗНИКНОВЕНИИ
-                        КОНФЛИКТОВ</h2>
-                      <span class="news__item__date">10.04.2017</span>
+                <div class="col-lg-9 col-md-8">
+                  <div class="swiper-container news__slider sliderNews-js">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide news__slider-item">
+                        <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
+                          <div class="news__item-drop">
+                            <p class="news__item-status">Мировые</p>
+                            <h2 class="news__item-caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
+                              В ВОЗНИКНОВЕНИИ
+                              КОНФЛИКТОВ</h2>
+                            <span class="news__item-date">10.04.2017</span>
+                          </div>
+                          <p class="news__item-anons">
+                            Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу
+                            вооруженных
+                            конфликтов на территориях
+                            Ближнего
+                          </p>
+                          <span class="news__item-date news__item-date_source">Источник: cyberleninka.ru</span>
+                        </a>
+                      </div>
+                      <div class="swiper-slide news__slider-item">
+                        <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
+                          <div class="news__item-drop">
+                            <p class="news__item-status">Мировые</p>
+                            <h2 class="news__item-caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
+                              В ВОЗНИКНОВЕНИИ
+                              КОНФЛИКТОВ</h2>
+                            <span class="news__item-date">10.04.2017</span>
+                          </div>
+                          <p class="news__item-anons">
+                            Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу
+                            вооруженных
+                            конфликтов на территориях
+                            Ближнего
+                          </p>
+                          <span class="news__item-date news__item-date_source">Источник: cyberleninka.ru</span>
+                        </a>
+                      </div>
+                      <div class="swiper-slide news__slider-item">
+                        <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
+                          <div class="news__item-drop">
+                            <p class="news__item-status">Мировые</p>
+                            <h2 class="news__item-caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
+                              В ВОЗНИКНОВЕНИИ
+                              КОНФЛИКТОВ</h2>
+                            <span class="news__item-date">10.04.2017</span>
+                          </div>
+                          <p class="news__item-anons">
+                            Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу
+                            вооруженных
+                            конфликтов на территориях
+                            Ближнего
+                          </p>
+                          <span class="news__item-date news__item-date_source">Источник: cyberleninka.ru</span>
+                        </a>
+                      </div>
                     </div>
-                    <p class="news__item__anons">
-                      Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу вооруженных
-                      конфликтов на территориях
-                      Ближнего
-                    </p>
-                    <span class="news__item__date news__item__date-source">Источник: cyberleninka.ru</span>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
-                    <div class="news__item__drop">
-                      <p class="news__item__status">Мировые</p>
-                      <h2 class="news__item__caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
-                        В ВОЗНИКНОВЕНИИ
-                        КОНФЛИКТОВ</h2>
-                      <span class="news__item__date">10.04.2017</span>
-                    </div>
-                    <p class="news__item__anons">
-                      Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу вооруженных
-                      конфликтов на территориях
-                      Ближнего
-                    </p>
-                    <span class="news__item__date news__item__date-source">Источник: cyberleninka.ru</span>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <a href="#" class="news__item" style="background-image: url('images/news/news1.jpg');">
-                    <div class="news__item__drop">
-                      <p class="news__item__status">Мировые</p>
-                      <h2 class="news__item__caption">РОЛЬ ПРИРОДНЫХ РЕСУРСОВ
-                        В ВОЗНИКНОВЕНИИ
-                        КОНФЛИКТОВ</h2>
-                      <span class="news__item__date">10.04.2017</span>
-                    </div>
-                    <p class="news__item__anons">
-                      Нехватка ресурсов стала <br> одним из ключевых факторов, способствовавших началу вооруженных
-                      конфликтов на территориях
-                      Ближнего
-                    </p>
-                    <span class="news__item__date news__item__date-source">Источник: cyberleninka.ru</span>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -188,13 +174,13 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-4">
-              <div class="captionWrap">
-                <h1 class="captionWrap__caption captionWrap__caption-othetKind">Проекты</h1>
-                <p class="captionWrap__subtitle">Профили проектов <br>
+              <div class="caption-wrap">
+                <h1 class="caption-wrap__caption caption-wrap__caption_othetKind">Проекты</h1>
+                <p class="caption-wrap__subtitle">Профили проектов <br>
                   на продажу, перепродажу,
                   аренду.
                 </p>
-                <a class="captionWrap__more captionWrap__more-other" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+                <a class="caption-wrap__more caption-wrap__more_other" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
               </div>
             </div>
             <div class="col-lg-9 col-md-8">
@@ -265,10 +251,10 @@
                       </table>
                     </div>
                   </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
@@ -278,29 +264,31 @@
       <!-- projects end -->
 
       <!-- useful -->
-      <div class="container">
-        <div class="useful">
-          <div class="row">
-            <div class="col-md">
-              <div class="captionWrap captionWrap-videDesc">
-                <h1 class="captionWrap__caption captionWrap__caption-useful">Полезный <br>
-                  видео материал </h1>
-                <p class="captionWrap__subtitle">Самые последние выступления. <br> Обучающие тренинги.
-                </p>
-                <a class="captionWrap__more captionWrap__more-useful" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+      <div class="useful">
+        <div class="container">
+          <div class="useful__wrap">
+            <div class="row">
+              <div class="col-md">
+                <div class="caption-wrap caption-wrap_videoDesc">
+                  <h1 class="caption-wrap__caption caption-wrap__caption_useful">Полезный <br>
+                    видео материал </h1>
+                  <p class="caption-wrap__subtitle">Самые последние выступления. <br> Обучающие тренинги.
+                  </p>
+                  <a class="caption-wrap__more caption-wrap__more_useful" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
+                </div>
               </div>
-            </div>
-            <div class="col-md">
-              <div class="useful__video">
-                <img src="https://i.ytimg.com/vi/_DKSpfSBUuo/mqdefault.jpg">
-                <div class="useful__video__desc">
-                  <p class="news__item__status">Мировые</p>
-                  <p class="useful__video__info">Как добывают и <br>
-                    руду в Казахстане </p>
-                  <span class="news__item__date">10.04.2017</span>
-                  <a data-fancybox="video" href="https://www.youtube.com/watch?v=_DKSpfSBUuo">
-                    <i class="icon-play"></i>
-                  </a>
+              <div class="col-md">
+                <div class="useful__video">
+                  <img src="https://i.ytimg.com/vi/_DKSpfSBUuo/mqdefault.jpg">
+                  <div class="useful__video-desc">
+                    <p class="news__item-status">Мировые</p>
+                    <p class="useful__video-info">Как добывают и <br>
+                      руду в Казахстане </p>
+                    <span class="news__item-date">10.04.2017</span>
+                    <a data-fancybox="video" href="https://www.youtube.com/watch?v=_DKSpfSBUuo">
+                      <i class="icon-play"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -314,38 +302,199 @@
         <div class="container">
           <div class="row">
             <div class="col-md">
-              <div class="articles__side articles__side-left">
-                <div class="captionWrap">
-                  <h1 class="captionWrap__caption captionWrap__caption-othetKind">Проекты</h1>
-                  <p class="captionWrap__subtitle">Профили проектов <br>
-                    на продажу, перепродажу,
+              <div class="articles__side">
+                <div class="caption-wrap">
+                  <h1 class="caption-wrap__caption caption-wrap__caption_othetKind">История успеха </h1>
+                  <p class="caption-wrap__subtitle">Реальные примеры из истории бизнеса успехов <br>
+                    молодых компаний.
                     аренду.
                   </p>
-                  <a class="captionWrap__more captionWrap__more-other" href="#">Посмотреть больше <i class="fal fa-long-arrow-right"></i></a>
                 </div>
+                <div class="articles__item">
+                  <div class="articles__author articles__author_publication">
+                    <p class="articles__author-name">Kaz Minerals</p>
+                    <p class="articles__date">Казахстан, Алматы</p>
+                  </div>
+                  <div class="articles__desc">
+                    <h2 class="articles__desc-caption">Роль природных ресурсов в <br> возникновении конфликтов</h2>
+                    <p class="articles__desc-anons">
+                      Нехватка ресурсов стала одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего Востока, Северной Африки и других регионах.
+                    </p>
+                  </div>
+                </div>
+                <div class="articles__item">
+                  <div class="articles__author articles__author_publication">
+                    <p class="articles__author-name">Kaz Minerals</p>
+                    <p class="articles__date">Казахстан, Алматы</p>
+                  </div>
+                  <div class="articles__desc">
+                    <h2 class="articles__desc-caption">Роль природных ресурсов в <br> возникновении конфликтов</h2>
+                    <p class="articles__desc-anons">
+                      Нехватка ресурсов стала одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего Востока, Северной Африки и других регионах.
+                    </p>
+                  </div>
+                </div>
+                <div class="articles__item">
+                  <div class="articles__author articles__author_publication">
+                    <p class="articles__author-name">Kaz Minerals</p>
+                    <p class="articles__date">Казахстан, Алматы</p>
+                  </div>
+                  <div class="articles__desc">
+                    <h2 class="articles__desc-caption">Роль природных ресурсов в <br> возникновении конфликтов</h2>
+                    <p class="articles__desc-anons">
+                      Нехватка ресурсов стала одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего Востока, Северной Африки и других регионах.
+                    </p>
+                  </div>
+                </div>
+                <a class="caption-wrap__more caption-wrap__more_other caption-wrap__more_other_articleMore" href="#">Посмотреть
+                  больше
+                  <i class="fal fa-long-arrow-right"></i></a>
               </div>
             </div>
             <div class="col-md">
-              <div class="articles__side"></div>
+              <div class="articles__side articles__side_light-side">
+                <div class="caption-wrap">
+                  <h1 class="caption-wrap__caption caption-wrap__caption_othetKind">Научные статьи </h1>
+                  <p class="caption-wrap__subtitle">Отчеты о проведенных исследований ведущих специалистов
+                    нашей отрасли.
+                  </p>
+                </div>
+                <div class="articles__item">
+                  <div class="articles__author">
+                    <div class="articles__author-img">
+                      <img src="images/author img/author1.png" alt="">
+                    </div>
+                    <p class="articles__author-name">Бахтияр
+                      Орнлольдович</p>
+                    <p class="articles__date">10.04.2017</p>
+                  </div>
+                  <div class="articles__desc">
+                    <h2 class="articles__desc-caption">Роль природных ресурсов в <br> возникновении конфликтов</h2>
+                    <p class="articles__desc-anons">
+                      Нехватка ресурсов стала одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего Востока, Северной Африки и других регионах.
+                    </p>
+                  </div>
+                </div>
+                <div class="articles__item">
+                  <div class="articles__author">
+                    <div class="articles__author-img">
+                      <img src="images/author img/author2.png" alt="">
+                    </div>
+                    <p class="articles__author-name">Бахтияр
+                      Орнлольдович</p>
+                    <p class="articles__date">10.04.2017</p>
+                  </div>
+                  <div class="articles__desc">
+                    <h2 class="articles__desc-caption">Роль природных ресурсов в <br> возникновении конфликтов</h2>
+                    <p class="articles__desc-anons">
+                      Нехватка ресурсов стала одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего Востока, Северной Африки и других регионах.
+                    </p>
+                  </div>
+                </div>
+                <div class="articles__item">
+                  <div class="articles__author">
+                    <div class="articles__author-img">
+                      <img src="images/author img/author3.png" alt="">
+                    </div>
+                    <p class="articles__author-name">Бахтияр
+                      Орнлольдович</p>
+                    <p class="articles__date">10.04.2017</p>
+                  </div>
+                  <div class="articles__desc">
+                    <h2 class="articles__desc-caption">Роль природных ресурсов в <br> возникновении конфликтов</h2>
+                    <p class="articles__desc-anons">
+                      Нехватка ресурсов стала одним из ключевых факторов, способствовавших началу вооруженных
+                      конфликтов на территориях
+                      Ближнего Востока, Северной Африки и других регионах.
+                    </p>
+                  </div>
+                </div>
+                <a class="caption-wrap__more caption-wrap__more_other caption-wrap__more_other_articleMore" href="#">Посмотреть
+                  больше
+                  <i class="fal fa-long-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- articles end -->
 
+      <!-- form -->
+
+      <div class="form-search">
+        <div class="container">
+          <div class="caption-wrap caption-wrap_form-caption">
+            <h1 class="caption-wrap__caption caption-wrap__caption_othetKind">Будьте в курсе последних <br>
+              новостей </h1>
+            <p class="caption-wrap__subtitle">Будь в курсе самых последних событий и новостей в <br>
+              горнодобывающей сфере
+            </p>
+          </div>
+          <form action="" class="form">
+            <div class="row">
+              <div class="col-lg-3 offset-lg-2 col-md-5">
+                <input type="text" class="form__input" name="имя" placeholder="Введите имя">
+              </div>
+              <div class="col-lg-3 col-md-5">
+                <input type="text" class="form__input" name="e-mail" placeholder="Введите e-mail">
+              </div>
+              <div class="col-lg-2 col-md-2">
+                <button type="submit" class="form__button">Следить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- form end -->
+
     </div>
     <!-- contentWrap end -->
 
     <!-- footer -->
     <div class="footer">
-      2
+      <div class="footer__nav-wrap">
+        <div class="container">
+          <div class="footer__mnu">
+            <ul>
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Финансы</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Case Study</a></li>
+              <li><a href="#">История успеха</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Инвесторам</a></li>
+              <li><a href="#">Сервисные компании </a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>&copy; 2017 Все права защищены</p>
+      </div>
     </div>
     <!-- footer end -->
 
   </div>
   <!-- mainWrap end -->
 
+  <!-- login -->
+  <div class="login" id="login">
 
+  </div>
+  <!-- login end -->
 
 
   <!-- build:js scripts/vendor.js -->
